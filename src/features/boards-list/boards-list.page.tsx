@@ -48,9 +48,9 @@ function BoardsListPage() {
 					Create board
 				</button>
 			</form>
-			<div className='grid grid-cols-3 gap-4'>
+			<div className='flex gap-4 flex-wrap'>
 				{boardsQuery.data?.map((board) => (
-					<Card key={board.id}>
+					<Card key={board.id} className='flex grow min-w-[280px]'>
 						<CardHeader>
 							<Button asChild variant='link'>
 								<Link to={href(ROUTES.BOARD, { boardId: board.id })}>

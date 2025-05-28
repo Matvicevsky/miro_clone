@@ -1,7 +1,7 @@
-import { AuthLayout } from './auth-layout'
+import { AuthLayout } from './ui/auth-layout'
 import { Link } from 'react-router-dom'
 import { ROUTES } from '@/shared/model/routes'
-import { RegistrationForm } from './registration-form'
+import { RegistrationForm } from './ui/registration-form'
 
 function RegisterPage() {
 	return (
